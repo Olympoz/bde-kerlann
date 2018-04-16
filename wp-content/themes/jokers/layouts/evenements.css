@@ -1,0 +1,97 @@
+
+
+.page_evenement_scroller{
+
+  overflow-x: hidden;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.evenement_row{
+
+  max-width: 1280px;
+  height: inherit;
+  margin: 0 auto !important;
+  align-items: center;
+
+}
+
+.evenement_wrapper{
+
+  margin-top: -76px !important;
+  position: relative;
+  margin: 0 auto;
+
+
+
+}
+
+.evenement_title{
+
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.evenement_content{
+
+  background-image: url('../img/event_img.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  position: relative;
+}
+
+.evenement_content:before{
+
+content: '';
+position: absolute;
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;
+background: rgba(0,0,0,0.7);
+
+}
+
+.evenement_content_text{
+
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px black;
+
+}
+
+.evenement_content_link{
+
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  background-color: green;
+  border: 1px solid black;
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+
+.evenement_content_link:hover{
+
+  background-color: black;
+  border: 1px solid transparent;
+  transition: 0.3s ;
+}
