@@ -128,6 +128,7 @@ function jokers_scripts() {
 	wp_enqueue_style('bootstrapcdn', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
 
 	wp_enqueue_style( 'evenements', get_template_directory_uri() . '/layouts/evenements.css',false,'4.9.4','all');
+	wp_enqueue_style( 'associations', get_template_directory_uri() . '/layouts/associations.css',false,'4.9.4','all');
 	wp_enqueue_style( 'responsive', get_template_directory_uri() . '/layouts/responsive.css');
 	wp_enqueue_style( 'header', get_template_directory_uri() . '/layouts/header.css',false,'4.9.4','all');
 	wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css',false,'4.9.4','all');
