@@ -1,9 +1,6 @@
 
 .associations_row {
-
-    max-width: 1280px;
-    height: 500px;
-    margin: 0 auto !important;
+    margin:0 50px 100px 50px;
 
 }
 
@@ -32,7 +29,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
+    height: 300px;
     position: relative;
 }
 
