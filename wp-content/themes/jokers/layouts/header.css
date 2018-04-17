@@ -39,15 +39,12 @@ transition: 0.3s;
 .connect_button{
 
     background-color: black;
-    border: 1px solid black;
     color: white;
     text-transform: uppercase;
-    padding: 5px;
-    margin: 0 auto;
+    width: auto;
+    float: right;
     cursor: pointer;
-    text-align: right;
-
-
+    padding: 5px;
 
 
 }

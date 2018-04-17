@@ -8,7 +8,33 @@ Template Name: evenements
 
 <div id="fullpage">
 
-  <div class="section">
+  <div class="section" data-anchor="section1">
+
+    <div class="svg">
+
+
+
+    </div>
+
+    <div class="circle_evenement">
+
+      <a href="#section1">
+
+        <div class="circle_page_evenement circle_active">
+
+        </div>
+
+      </a>
+
+      <a href="#section2">
+
+        <div class="circle_page_evenement">
+
+        </div>
+
+      </a>
+
+    </div>
 
     <div class="flex-row d-flex evenement_row">
 
@@ -48,7 +74,7 @@ Template Name: evenements
 
               <div class="evenement_title">
 
-                <?php the_field('evenement_title_2'); ?>
+                <?php the_field('evenement_title_1'); ?>
 
               </div>
 
@@ -56,7 +82,7 @@ Template Name: evenements
 
                 <div class="evenement_content_text">
 
-                  <?php the_field('evenement_content_2'); ?>
+                  <?php the_field('evenement_content_1'); ?>
 
                 </div>
 
@@ -72,13 +98,38 @@ Template Name: evenements
 
         </div>
 
+
+
     </div>
+
+
 
   </div>
 
   <!-- Deuxième page  -->
 
-  <div class="section">
+  <div class="section" data-anchor="section2">
+
+    <div class="circle_evenement">
+
+      <a href="#section1">
+
+        <div class="circle_page_evenement ">
+
+        </div>
+
+      </a>
+
+      <a href="#section2">
+
+        <div class="circle_page_evenement circle_active">
+
+        </div>
+
+      </a>
+
+    </div>
+
 
     <div class="flex-row d-flex evenement_row">
 
@@ -118,7 +169,7 @@ Template Name: evenements
 
               <div class="evenement_title">
 
-                <?php the_field('evenement_title_2'); ?>
+                <?php the_field('evenement_title_1'); ?>
 
               </div>
 
@@ -126,7 +177,7 @@ Template Name: evenements
 
                 <div class="evenement_content_text">
 
-                  <?php the_field('evenement_content_2'); ?>
+                  <?php the_field('evenement_content_1'); ?>
 
                 </div>
 

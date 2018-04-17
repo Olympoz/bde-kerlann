@@ -1,5 +1,5 @@
 /*!
-Theme Name: JO\'KERs
+Theme Name: JOKERs
 Theme URI: http://underscores.me/
 Author: Underscores.me
 Author URI: http://underscores.me/
@@ -574,7 +574,7 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	
+
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	padding: 3px;
@@ -1112,59 +1112,181 @@ textarea {
 
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 
-			*, *:before, *:after { 
-				margin: 0; 
-				padding: 0; 
-				box-sizing: border-box; 
+			*, *:before, *:after {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
 			}
-			
+
 			/* Style Popup */
-			.popup-trigger { 
-				display: block; 
-				margin: 0 auto; 
-				padding: 20px; 
-				max-width: 260px; 
-				background: #4EBD79; 
+			.popup-trigger {
+				display: block;
+				margin: 0 auto;
+				max-width: auto;
+				background: #4EBD79;
 				color: #fff;
-    			font-size: 18px; 
-    			font-weight: 700; 
-    			text-align: center; 
-    			text-transform: uppercase; 
-    			line-height: 24px; 
-    			cursor: pointer; 
+  			font-weight: 700;
+  			text-align: center;
+  			text-transform: uppercase;
+  			cursor: pointer;
+				padding: 5px;
     		}
 
 		  	.popup {
-		  		display: none; 
-		  		position: absolute; 
-		  		top: 100px; left: 50%; 
-		  		width: 700px; 
-		  		margin-left: -350px; 
+		  		display: none;
+		  		position: absolute;
+		  		top: 100px; left: 50%;
+		  		width: 700px;
+		  		margin-left: -350px;
 		  		padding: 50px 30px;
-  				background:rgba(19, 35, 47, 1); 
-  				color: #a0b3b0; 
-  				font-size: 19px; 
-  				line-height: 30px; 
-  				border: 10px solid #150E2D; 
+  				background:rgba(19, 35, 47, 1);
+  				color: #a0b3b0;
+  				font-size: 19px;
+  				line-height: 30px;
+  				border: 10px solid #150E2D;
   				z-index: 9999;
   			}
 
   			.popup-mobile {
-  				position: relative; 
-  				top: 0; 
+  				position: relative;
+  				top: 0;
   				left: 0;
-  				margin: 30px 0 0; 
+  				margin: 30px 0 0;
   				width: 100%;
-  			}		
+  			}
 
   		    .popup-btn-close {
-  		    	position: absolute; 
-  		    	top: 8px; 
+  		    	position: absolute;
+  		    	top: 8px;
   		    	right: 14px;
-  		    	color: #4EBD79; 
-  		    	font-size: 14px; 
-  		    	font-weight: bold; 
-  		    	text-transform: uppercase; 
+  		    	color: #4EBD79;
+  		    	font-size: 14px;
+  		    	font-weight: bold;
+  		    	text-transform: uppercase;
   		    	cursor: pointer;
   		    }
+
+/* Style Formulaire de Connexion */
+
+.form {
+
+  padding: 40px;
+  max-width:600px;
+  margin:40px auto;
+  border-radius:4px;
+  box-shadow:0 4px 10px 4px rgba(#13232f,.3);
+}
+
+.tab-group {
+  list-style:none;
+  padding:0;
+  margin:0 0 40px 0;
+}
+
+.tab-group li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    background: rgba(160, 179, 176, 0.25);
+    color: #a0b3b0;
+    font-size: 20px;
+    float: left;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+}
+
+.tab-group .active a {
+    background: #1ab188;
+    color: #ffffff;
+}
+
+.tab-content > div:last-child {
+  display:none;
+}
+
+
+#titreFormConnection {
+  text-align:center;
+  color:#ffffff;
+  font-weight:300;
+  margin:0 0 40px;
+  padding-top: 20px;
+}
+
+label {
+  position:absolute;
+  transform:translateY(6px);
+  left:13px;
+  pointer-events: none;
+  font-size:22px;
+
+}
+
+label.active {
+  transform:translateY(50px);
+  left:2px;
+  font-size:14px;
+}
+
+label.highlight {
+  color:#ffffff;
+}
+
+input, textarea {
+  font-size:22px;
+  display:block;
+  width:100%;
+  height:100%;
+  padding:5px 10px;
+  background:none;
+  background-image:none;
+  border:1px solid #a0b3b0;
+  color:#ffffff;
+  border-radius:0;
+  transition:border-color .25s ease, box-shadow .25s ease;
+}
+
+textarea {
+  border:2px solid #a0b3b0;
+  resize: vertical;
+}
+
+.field-wrap {
+  position:relative;
+  margin-bottom:40px;
+}
+
+.req {
+  margin:2px;
+  color:#1ab188;
+}
+
+.button {
+  border:0;
+  outline:none;
+  border-radius:0;
+  padding:15px 0;
+  font-size:2rem;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  background:#1ab188;
+  color:#ffffff;
+  transition:all.5s ease;
+  -webkit-appearance: none;
+}
+
+.button-block {
+  display:block;
+  width:100%;
+}
+
+.forgot {
+  margin-top:-20px;
+  text-align:right;
+  text-decoration: none;
+}
 
