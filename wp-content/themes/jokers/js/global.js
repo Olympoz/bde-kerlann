@@ -1,3 +1,5 @@
+// Fullpage Jquery //
+
 jQuery(function($){
 
 	$(document).ready(function() {
@@ -8,11 +10,12 @@ jQuery(function($){
 
 	  let field = $('#fullpage');
 
-	  console.log('coucou',  field);
-
 	  field.fullpage();
 	});
 });
+
+
+
 // Popup Formulaire de Connexion //
 
 var scrollTop = '';
@@ -23,7 +26,7 @@ jQuery(function($){
 		scrollTop = $( window ).scrollTop();
 		newHeight = scrollTop + 100;
 	});
-		
+
 	$('.popup-trigger').click(function(e) {
   		e.stopPropagation();
 		if(jQuery(window).width() < 767) {
@@ -31,12 +34,12 @@ jQuery(function($){
 		   $('.popup').show().addClass('popup-mobile').css('top', 0);
 		   $('html, body').animate({
 				scrollTop: $('.popup').offset().top
-			}, 500);   
+			}, 500);
 		}else {
 		   $('.popup').removeClass('popup-mobile').css('top', newHeight).toggle();
 		};
 	});
-		
+
 	$('html').click(function() {
 		$('.popup').hide();
 	});
@@ -55,18 +58,18 @@ jQuery(function($){
 jQuery(function($){
 
 	$('.tab a').on('click', function (e) {
-	  
+
 	  e.preventDefault();
-	  
+
 	  $(this).parent().addClass('active');
 	  $(this).parent().siblings().removeClass('active');
-	  
+
 	  target = $(this).attr('href');
 
 	  $('.tab-content > div').not(target).hide();
-	  
+
 	  $(target).fadeIn(600, function(){});
-	  
+
 	});
 
 });
@@ -79,5 +82,5 @@ jQuery(function($){
 	  js = d.createElement(s); js.id = id;
 	  js.src = 'https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.12&appId=1819400048364327&autoLogAppEvents=1';
 	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));	
+	}(document, 'script', 'facebook-jssdk'));
 });

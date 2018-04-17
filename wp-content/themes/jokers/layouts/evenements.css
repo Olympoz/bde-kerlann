@@ -1,5 +1,3 @@
-
-
 .page_evenement_scroller{
 
   overflow-x: hidden;
@@ -9,9 +7,43 @@
 
 }
 
+.circle_evenement{
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-45%);
+  margin-left: 6%;
+}
+
+.circle_page_evenement.circle_active{
+
+
+  height: 12.5px;
+  width: 12.5px;
+  border-radius: 10px;
+  background-color: black;
+
+}
+
+.circle_page_evenement{
+
+  margin-top: 5px;
+  height: 12.5px;
+  width: 12.5px;
+  border-radius: 10px;
+  background-color: #606060;
+}
+
+
+.svg{
+
+  position: absolute;
+}
+
+
 .evenement_row{
 
-  max-width: 1280px;
+  max-width: 980px;
   height: inherit;
   margin: 0 auto !important;
   align-items: center;
@@ -19,12 +51,9 @@
 }
 
 .evenement_wrapper{
-
   margin-top: -76px !important;
   position: relative;
   margin: 0 auto;
-
-
 
 }
 
@@ -46,31 +75,31 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
+  height: 350px;
   position: relative;
 }
 
 .evenement_content:before{
 
-content: '';
-position: absolute;
-top: 0;
-right: 0;
-left: 0;
-bottom: 0;
-background: rgba(0,0,0,0.7);
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.7);
 
 }
 
 .evenement_content_text{
 
-    text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
-    position: relative;
-    color: white;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 1px black;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px black;
 
 }
 
